@@ -22,7 +22,11 @@ import { Provider } from 'react-redux';
 import { configureStore } from '@reduxjs/toolkit';
 import reducer from './state/reducers';
 import { colors } from './styles/data_vis_colors';
-
+import { Auth0ProviderWithNavigate } from '../src/components/pages/auth0/auth0-provider-with-navigate';
+import { Profile } from './components/pages/auth0/Profile';
+import { useAuth0 } from '@auth0/auth0-react';
+import Loader from './components/common/Loader';
+require('dotenv').config();
 const { primary_accent_color } = colors;
 
 const store = configureStore({ reducer: reducer });
@@ -30,7 +34,11 @@ ReactDOM.render(
   <Router>
     <Provider store={store}>
       <React.StrictMode>
-        <App />
+        <Router>
+          <Auth0ProviderWithNavigate>
+            <App />
+          </Auth0ProviderWithNavigate>
+        </Router>
       </React.StrictMode>
     </Provider>
   </Router>,
@@ -39,6 +47,15 @@ ReactDOM.render(
 
 export function App() {
   const { Footer, Header } = Layout;
+  const { isLoading } = useAuth0();
+
+  if (isLoading) {
+    return (
+      <div className="page-layout">
+        <Loader />
+      </div>
+    );
+  }
   return (
     <Layout>
       <Header
@@ -54,6 +71,8 @@ export function App() {
       <Switch>
         <Route path="/" exact component={LandingPage} />
         <Route path="/graphs" component={GraphsContainer} />
+        <Route path="/callback" exact component={LandingPage} />
+        <Route path="/protected/profile" component={Profile} />
         <Route component={NotFoundPage} />
       </Switch>
       <Footer

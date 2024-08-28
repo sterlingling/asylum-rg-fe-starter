@@ -1,891 +1,904 @@
-@main-color: #404C4A;
+@main-color: #404c4a;
 @secondary-color: #707070;
-@white: #FFFFFF;
-@mobile-small: ~"(min-width: 320px) and (max-width: 375px)";
-@mobile-medium: ~"(min-width: 376px) and (max-width: 414px)";
-@mobile-large: ~"(min-width: 415px) and (max-width: 480px)";
-@tablet-small: ~"(min-width: 481px) and (max-width: 768px)";
-@tablet-large: ~"(min-width: 769px) and (max-width: 1024px)";
-@laptop: ~"(min-width: 1025px) and (max-width: 1280px)";
+@white: #ffffff;
+@mobile-small: ~'(min-width: 320px) and (max-width: 375px)';
+@mobile-medium: ~'(min-width: 376px) and (max-width: 414px)';
+@mobile-large: ~'(min-width: 415px) and (max-width: 480px)';
+@tablet-small: ~'(min-width: 481px) and (max-width: 768px)';
+@tablet-large: ~'(min-width: 769px) and (max-width: 1024px)';
+@laptop: ~'(min-width: 1025px) and (max-width: 1280px)';
 
 .header {
-    background-color: @main-color;
-    display: flex;
-    text-align: center;
-    width: 100%;
-    height: 20vh;
-    margin-bottom: 10%;
+  background-color: @main-color;
+  display: flex;
+  text-align: center;
+  width: 100%;
+  height: 20vh;
+  margin-bottom: 10%;
+}
+.hrf-logo {
+  padding-left: 1.5rem;
 }
 
 .hrf-logo-img-container img {
-    height: 64px;
-    width: 98px;
-    margin-left: 15%;
+  height: 40px;
+  width: 98px;
+  margin-left: 15%;
 }
 
 .header-text-container {
-    text-align: center;
-    width: 100%;
-    align-items: center;
+  text-align: center;
+  width: 100%;
+  align-items: center;
 }
 
 .header-text-container h1 {
-    font-size: 3rem;
-    color: @white;
-    font-family: 'moneta';
+  font-size: 4.5rem;
+  color: @white;
+  font-family: 'moneta';
+  //
 }
-
-.systemic-container {
-    display: flex;
-    flex-direction: column;
-    /* Ensure vertical stacking */
-    align-items: center;
-    /* Center horizontally */
-    text-align: center;
-    /* Center text */
-    margin: 0 auto;
-    /* Center horizontally within its parent */
-    max-width: 1200px;
-    /* Optional: restrict maximum width */
-    padding: 20px;
-    /* Optional: add some padding */
-}
-
-.systemic-container h1 {
-    font-size: 3rem;
-    color: black;
-    font-family: 'moneta';
-}
-
-@media @mobile-small, @mobile-medium, @mobile-large, @tablet-small, @tablet-large, @laptop {
-    .systemic-container {
-        width: 100%;
-        /* Ensure it takes full width of the parent */
-        padding: 10px;
-        /* Adjust padding as needed */
-    }
-}
-
-
 
 .header-text-container h3 {
-    font-family: 'beatrice regular';
-    color: @white;
-    font-size: 1.2rem;
+  font-family: 'beatrice regular';
+  color: @white;
+  font-size: 1.8rem;
 }
 
 .graphs-section {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    margin: 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20rem;
+  align-items: center;
+  text-align: center;
+  width: 100%;
 }
-
-.graph-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 10px;
+.graphs-section img {
+  height: 16rem;
+  width: 100%;
+  margin-bottom: 2.5rem;
 }
-
-.graph-img {
-    max-width: 100%;
-    height: auto;
-    /* Set a fixed height to ensure alignment */
-    max-height: 200px;
-    /* Adjust this value as needed */
+.graphs-section p {
+  font-size: 2.3rem;
+  font-family: 'moneta';
 }
-
-.graph-description {
-    margin-top: 10px;
-    font-size: 16px;
-    color: #333;
-}
-
 
 .view-more-data-btn-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
+  height: 44px;
+  width: 180px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 10%;
+  padding-bottom: 10rem;
 }
-
-.view-more-data-btn-container .ant-btn {
-    margin: 0 10px;
+.view-more-data-btn-container button {
+  margin-top: 6rem;
+  height: 50px;
+  width: 190px;
+  font-size: 1.3rem;
 }
-
 
 .middle-section {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 150px 0; 
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
 }
 
 .hrf-img {
-    height: 339px;
-    width: 648px;
-    border-radius: 10px;
+  height: 30rem;
+  width: 60rem;
+  border-radius: 10px;
 }
 
 .middle-section-text-container {
-    width: 700px;
-    text-align: center;
+  width: 65rem;
+  text-align: center;
 }
 
 .middle-section-text-container h3 {
-    font-family: 'acumin';
-    font-size: 1.4rem;
+  font-family: 'acumin';
+  font-size: 2.1rem;
 }
-
 .bottom-section {
-    margin: 40px auto;
-    max-width: 1200px;
-    padding: 20px;
-    background-color: transparent;
-    /* Make background transparent */
-    border-radius: 8px;
-    /* Optional: rounded corners */
-    text-align: center;
+  text-align: center;
+  padding-top: 12rem;
+  width: 100%;
 }
-
-.insights-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    /* Space between items */
+.bottom-section h1 {
+  font-size: 80px;
+  font-family: 'moneta';
+  padding-bottom: 15rem;
 }
-
-.stat-item {
-    flex: 1 1 calc(33% - 20px);
-    /* Responsive columns */
-    min-width: 250px;
-    /* Minimum width for items */
-    background-color: transparent;
-    /* Make background transparent */
-    padding: 20px;
-    border-radius: 8px;
-    /* Rounded corners */
-
-    text-align: center;
-    /* Center text inside items */
+.bottom-section-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  gap: 20rem;
 }
-
-.stat-item h3 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-    font-family: 'moneta';
+.bottom-section-container h2 {
+  font-size: 80px;
+  font-family: 'moneta';
 }
-
-.stat-item p {
-    font-size: 1em;
-    line-height: 1.6;
+.bottom-section-container h3 {
+  font-size: 30px;
+  font-family: 'moneta';
+  text-align: center;
 }
-
-
-
-
+.container {
+  width: 40rem;
+}
 
 .back-to-top {
-    width: 8%;
-    font-size: 1.2rem;
-    cursor: pointer;
-    color: black;
-    margin: 5% auto;
+  width: 8%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: black;
+  margin: 5% auto;
 }
 
 .ant-space-align-center {
-    @media (max-width: 375px) {
-        display: flex;
-        flex-wrap: wrap;
-    }
+  @media (max-width: 375px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .ant-btn:hover {
-    border-color: @secondary-color !important;
+  border-color: @secondary-color !important;
 }
 
-
-
 @media @mobile-small {
-    .header {
-        height: 30vh;
-        display: block;
-        position: relative;
-    }
+  .header {
+    height: 30vh;
+    display: block;
+    position: relative;
+  }
+  .hrf-logo-img-container {
+    height: fit-content;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 2% 2%;
+  }
 
-    .hrf-logo-img-container {
-        height: fit-content;
-        position: absolute;
-        top: 0;
-        left: 0;
-        margin: 2% 2%;
-    }
+  .hrf-logo-img-container img {
+    height: 30px;
+    width: 48px;
+  }
 
-    .hrf-logo-img-container img {
-        height: 30px;
-        width: 48px;
+  .header-text-container h1 {
+    font-size: 1.5rem;
+    padding-top: 5%;
+  }
 
-    }
+  .header-text-container h3 {
+    font-size: 0.85rem;
+    width: 85%;
+    margin: 0 auto;
+  }
 
-    .header-text-container h1 {
-        font-size: 1.5rem;
-        padding-top: 5%;
-    }
+  .graphs-section {
+    display: block;
+    width: 100%;
+  }
 
-    .header-text-container h3 {
-        font-size: .85rem;
-        width: 85%;
-        margin: 0 auto;
-    }
+  .grant-rates-by-office-graph-container {
+    margin-top: 20%;
+    margin-bottom: 40%;
+  }
 
-    .graphs-section {
-        display: block;
-        width: 100%;
-    }
+  .grant-rates-by-nationality-container {
+    margin-bottom: 40%;
+  }
 
-    .grant-rates-by-office-graph-container {
-        margin-top: 20%;
-        margin-bottom: 40%;
-    }
+  .gr-nationality-img {
+    margin-bottom: 8%;
+  }
 
-    .grant-rates-by-nationality-container {
-        margin-bottom: 40%;
-    }
+  .grant-rates-over-time-container {
+    margin-bottom: 40%;
+  }
 
-    .gr-nationality-img {
-        margin-bottom: 8%;
-    }
+  .middle-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 75vh;
+    background-color: @secondary-color;
+    padding-top: 15%;
+    text-align: center;
+  }
 
-    .grant-rates-over-time-container {
-        margin-bottom: 40%;
-    }
+  .hrf-img {
+    height: 169px;
+    width: 324px;
+  }
 
-    .middle-section {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        height: 75vh;
-        background-color: @secondary-color;
-        padding-top: 15%;
-        text-align: center;
-    }
+  .middle-section-text-container {
+    width: 85%;
+    text-align: center;
+    margin: 0 auto;
+  }
 
-    .hrf-img {
-        height: 169px;
-        width: 324px;
-    }
+  .middle-section-text-container h3 {
+    font-size: 0.95rem;
+    color: @white;
+  }
 
-    .middle-section-text-container {
-        width: 85%;
-        text-align: center;
-        margin: 0 auto;
+  .bottom-section h1 {
+    font-size: 2rem;
+  }
 
-    }
+  .data-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
 
-    .middle-section-text-container h3 {
-        font-size: .95rem;
-        color: @white;
-    }
+  .first-data-point-container {
+    width: 85%;
+    margin-bottom: 5%;
+  }
 
-    .bottom-section h1 {
-        font-size: 2rem;
-    }
+  .second-data-point-container {
+    width: 85%;
+    margin-bottom: 5%;
+  }
 
-    .data-container {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-    }
+  .third-data-point-container {
+    width: 85%;
+    margin-bottom: 5%;
+  }
 
-    .first-data-point-container {
-        width: 85%;
-        margin-bottom: 5%;
-    }
-
-    .second-data-point-container {
-        width: 85%;
-        margin-bottom: 5%;
-    }
-
-    .third-data-point-container {
-        width: 85%;
-        margin-bottom: 5%;
-    }
-
-    .back-to-top {
-        width: 35%;
-    }
-
-
+  .back-to-top {
+    width: 35%;
+  }
 }
 
 @media @mobile-medium {
-    .header {
-        height: 20vh;
-        display: block;
-        position: relative;
-    }
+  .header {
+    height: 20vh;
+    display: block;
+    position: relative;
+  }
+  .hrf-logo-img-container {
+    height: fit-content;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 2% 2%;
+  }
 
-    .hrf-logo-img-container {
-        height: fit-content;
-        position: absolute;
-        top: 0;
-        left: 0;
-        margin: 2% 2%;
-    }
+  .hrf-logo-img-container img {
+    height: 30px;
+    width: 48px;
+  }
 
-    .hrf-logo-img-container img {
-        height: 30px;
-        width: 48px;
+  .header-text-container h1 {
+    font-size: 1.5rem;
+    padding-top: 5%;
+  }
 
-    }
+  .header-text-container h3 {
+    font-size: 0.85rem;
+    width: 85%;
+    margin: 0 auto;
+  }
 
-    .header-text-container h1 {
-        font-size: 1.5rem;
-        padding-top: 5%;
-    }
+  .graphs-section {
+    display: block;
+    width: 100%;
+  }
 
-    .header-text-container h3 {
-        font-size: .85rem;
-        width: 85%;
-        margin: 0 auto;
-    }
+  .grant-rates-by-office-graph-container {
+    margin-top: 20%;
+    margin-bottom: 40%;
+  }
 
-    .graphs-section {
-        display: block;
-        width: 100%;
-    }
+  .grant-rates-by-nationality-container {
+    margin-bottom: 40%;
+  }
 
-    .grant-rates-by-office-graph-container {
-        margin-top: 20%;
-        margin-bottom: 40%;
-    }
+  .gr-nationality-img {
+    margin-bottom: 8%;
+  }
 
-    .grant-rates-by-nationality-container {
-        margin-bottom: 40%;
-    }
+  .grant-rates-over-time-container {
+    margin-bottom: 40%;
+  }
 
-    .gr-nationality-img {
-        margin-bottom: 8%;
-    }
+  .middle-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 75vh;
+    background-color: @secondary-color;
+    padding-top: 5%;
+    text-align: center;
+  }
 
-    .grant-rates-over-time-container {
-        margin-bottom: 40%;
-    }
+  .hrf-img {
+    height: 197px;
+    width: 378px;
+  }
 
-    .middle-section {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        height: 75vh;
-        background-color: @secondary-color;
-        padding-top: 5%;
-        text-align: center;
+  .middle-section-text-container {
+    width: 85%;
+    text-align: center;
+    margin: 0 auto;
+  }
 
-    }
+  .middle-section-text-container h3 {
+    font-size: 1.1rem;
+    color: @white;
+  }
 
-    .hrf-img {
-        height: 197px;
-        width: 378px;
-    }
+  .bottom-section h1 {
+    font-size: 2.1rem;
+  }
 
-    .middle-section-text-container {
-        width: 85%;
-        text-align: center;
-        margin: 0 auto;
-    }
+  .data-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
 
-    .middle-section-text-container h3 {
-        font-size: 1.1rem;
-        color: @white;
-    }
+  .first-data-point-container {
+    width: 85%;
+    margin-bottom: 5%;
+  }
 
-    .bottom-section h1 {
-        font-size: 2.1rem;
-    }
+  .second-data-point-container {
+    width: 85%;
+    margin-bottom: 5%;
+  }
 
-    .data-container {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-    }
+  .third-data-point-container {
+    width: 85%;
+    margin-bottom: 5%;
+  }
 
-    .first-data-point-container {
-        width: 85%;
-        margin-bottom: 5%;
-    }
+  .back-to-top {
+    width: 35%;
+  }
 
-    .second-data-point-container {
-        width: 85%;
-        margin-bottom: 5%;
-    }
-
-    .third-data-point-container {
-        width: 85%;
-        margin-bottom: 5%;
-    }
-
-    .back-to-top {
-        width: 35%;
-    }
-
-    .ant-space-align-center {
-        display: flex;
-        flex-wrap: wrap;
-    }
+  .ant-space-align-center {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 @media @mobile-large {
-    .header {
-        height: 20vh;
-        display: block;
-        position: relative;
-    }
+  .header {
+    height: 20vh;
+    display: block;
+    position: relative;
+  }
+  .hrf-logo-img-container {
+    height: fit-content;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 2% 2%;
+  }
 
-    .hrf-logo-img-container {
-        height: fit-content;
-        position: absolute;
-        top: 0;
-        left: 0;
-        margin: 2% 2%;
-    }
+  .hrf-logo-img-container img {
+    height: 30px;
+    width: 48px;
+  }
 
-    .hrf-logo-img-container img {
-        height: 30px;
-        width: 48px;
-    }
+  .header-text-container h1 {
+    font-size: 1.5rem;
+    padding-top: 5%;
+  }
 
-    .header-text-container h1 {
-        font-size: 1.5rem;
-        padding-top: 5%;
-    }
+  .header-text-container h3 {
+    font-size: 0.85rem;
+    width: 85%;
+    margin: 0 auto;
+  }
 
-    .header-text-container h3 {
-        font-size: .85rem;
-        width: 85%;
-        margin: 0 auto;
-    }
+  .graphs-section {
+    display: block;
+    width: 100%;
+  }
 
-    .graphs-section {
-        display: block;
-        width: 100%;
-    }
+  .grant-rates-by-office-graph-container {
+    margin-top: 20%;
+    margin-bottom: 40%;
+  }
 
-    .grant-rates-by-office-graph-container {
-        margin-top: 20%;
-        margin-bottom: 40%;
-    }
+  .grant-rates-by-nationality-container {
+    margin-bottom: 30%;
+  }
 
-    .grant-rates-by-nationality-container {
-        margin-bottom: 30%;
-    }
+  .gr-nationality-img {
+    margin-bottom: 8%;
+  }
 
-    .gr-nationality-img {
-        margin-bottom: 8%;
-    }
+  .grant-rates-over-time-container {
+    margin-bottom: 40%;
+  }
 
-    .grant-rates-over-time-container {
-        margin-bottom: 40%;
-    }
+  .middle-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 75vh;
+    background-color: @secondary-color;
+    padding-top: 5%;
+    text-align: center;
+  }
 
-    .middle-section {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        height: 75vh;
-        background-color: @secondary-color;
-        padding-top: 5%;
-        text-align: center;
-    }
+  .hrf-img {
+    height: 197px;
+    width: 378px;
+  }
 
-    .hrf-img {
-        height: 197px;
-        width: 378px;
-    }
+  .middle-section-text-container {
+    width: 100vw;
+    text-align: center;
+    margin: 0 auto;
+  }
 
-    .middle-section-text-container {
-        width: 85%;
-        text-align: center;
-        margin: 0 auto;
-    }
+  .middle-section-text-container h3 {
+    font-size: 1.1rem;
+    color: @white;
+  }
 
-    .middle-section-text-container h3 {
-        font-size: 1.1rem;
-        color: @white;
-    }
+  .bottom-section h1 {
+    font-size: 2.1rem;
+  }
 
-    .bottom-section h1 {
-        font-size: 2.1rem;
-    }
+  .data-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
 
-    .data-container {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-    }
+  .first-data-point-container {
+    width: 85%;
+    margin-bottom: 5%;
+  }
 
-    .first-data-point-container {
-        width: 85%;
-        margin-bottom: 5%;
-    }
+  .second-data-point-container {
+    width: 85%;
+    margin-bottom: 5%;
+  }
 
-    .second-data-point-container {
-        width: 85%;
-        margin-bottom: 5%;
-    }
+  .third-data-point-container {
+    width: 85%;
+    margin-bottom: 5%;
+  }
 
-    .third-data-point-container {
-        width: 85%;
-        margin-bottom: 5%;
-    }
+  .back-to-top {
+    width: 35%;
+  }
 
-    .back-to-top {
-        width: 35%;
-    }
-
-    .ant-space-align-center {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
+  .ant-space-align-center {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 @media @tablet-small {
-    .header {
-        height: 30vh;
-        display: block;
-        position: relative;
-    }
+  .header {
+    height: 30vh;
+    display: block;
+    position: relative;
+  }
+  .hrf-logo-img-container {
+    height: fit-content;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1% 1%;
+  }
 
-    .hrf-logo-img-container {
-        height: fit-content;
-        position: absolute;
-        top: 0;
-        left: 0;
-        margin: 1% 1%;
-    }
+  .hrf-logo-img-container img {
+    height: 66px;
+    width: 108px;
+  }
 
-    .hrf-logo-img-container img {
-        height: 66px;
-        width: 108px;
+  .header-text-container h1 {
+    font-size: 2.5rem;
+    padding-top: 5%;
+  }
 
-    }
+  .header-text-container h3 {
+    font-size: 1.3rem;
+    width: 85%;
+    margin: 0 auto;
+  }
 
-    .header-text-container h1 {
-        font-size: 2.5rem;
-        padding-top: 5%;
-    }
+  .graphs-section {
+    display: block;
+    width: 100%;
+  }
 
-    .header-text-container h3 {
-        font-size: 1.3rem;
-        width: 85%;
-        margin: 0 auto;
-    }
+  .grant-rates-by-office-graph-container {
+    margin-top: 20%;
+    margin-bottom: 40%;
+  }
 
-    .graphs-section {
-        display: block;
-        width: 100%;
-    }
+  .grant-rates-by-nationality-container {
+    margin-bottom: 25%;
+  }
 
-    .grant-rates-by-office-graph-container {
-        margin-top: 20%;
-        margin-bottom: 40%;
-    }
+  .gr-nationality-img {
+    margin-bottom: 8%;
+  }
 
-    .grant-rates-by-nationality-container {
-        margin-bottom: 25%;
-    }
+  .grant-rates-over-time-container {
+    margin-bottom: 40%;
+  }
 
-    .gr-nationality-img {
-        margin-bottom: 8%;
-    }
+  .middle-section {
+    display: block;
+    width: 100%;
+    height: 75vh;
+    background-color: @secondary-color;
+    padding-top: 10%;
+    text-align: center;
+  }
 
-    .grant-rates-over-time-container {
-        margin-bottom: 40%;
-    }
+  .hrf-img {
+    height: 288px;
+    width: 552px;
+  }
 
-    .middle-section {
-        display: block;
-        width: 100%;
-        height: 75vh;
-        background-color: @secondary-color;
-        padding-top: 10%;
-        text-align: center;
-    }
+  .middle-section-text-container {
+    width: 85%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 10%;
+  }
 
-    .hrf-img {
-        height: 288px;
-        width: 552px;
-    }
+  .middle-section-text-container h3 {
+    font-size: 1.5rem;
+    color: @white;
+  }
 
-    .middle-section-text-container {
-        width: 85%;
-        text-align: center;
-        margin: 0 auto;
-        padding-top: 10%;
-    }
+  .bottom-section h1 {
+    font-size: 2.7rem;
+  }
 
-    .middle-section-text-container h3 {
-        font-size: 1.5rem;
-        color: @white;
-    }
+  .data-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
 
-    .bottom-section h1 {
-        font-size: 2.7rem;
-    }
+  .first-data-point-container {
+    width: 85%;
+    margin-bottom: 5%;
+  }
 
-    .data-container {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-    }
+  .second-data-point-container {
+    width: 85%;
+    margin-bottom: 5%;
+  }
 
-    .first-data-point-container {
-        width: 85%;
-        margin-bottom: 5%;
-    }
+  .third-data-point-container {
+    width: 85%;
+    margin-bottom: 5%;
+  }
 
-    .second-data-point-container {
-        width: 85%;
-        margin-bottom: 5%;
-    }
+  .back-to-top {
+    width: 35%;
+  }
 
-    .third-data-point-container {
-        width: 85%;
-        margin-bottom: 5%;
-    }
-
-    .back-to-top {
-        width: 35%;
-    }
-
-    .ant-space-align-center {
-        display: flex;
-        flex-wrap: wrap;
-    }
+  .ant-space-align-center {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 @media @tablet-large {
-    .header {
-        height: 30vh;
-        display: block;
-        position: relative;
-    }
+  .header {
+    height: 30vh;
+    display: block;
+    position: relative;
+  }
+  .hrf-logo-img-container {
+    height: fit-content;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
-    .hrf-logo-img-container {
-        height: fit-content;
-        position: absolute;
-        top: 0;
-        left: 0;
+  .hrf-logo-img-container img {
+    height: 83px;
+    width: 136px;
+  }
 
-    }
+  .header-text-container h1 {
+    font-size: 3.5rem;
+    padding-top: 5%;
+  }
 
-    .hrf-logo-img-container img {
-        height: 83px;
-        width: 136px;
+  .header-text-container h3 {
+    font-size: 1.8rem;
+    width: 85%;
+    margin: 0 auto;
+  }
 
-    }
+  .graphs-section {
+    display: block;
+    width: 100%;
+  }
 
-    .header-text-container h1 {
-        font-size: 3.5rem;
-        padding-top: 5%;
-    }
+  .grant-rates-by-office-graph-container {
+    margin-top: 20%;
+    margin-bottom: 40%;
+  }
 
-    .header-text-container h3 {
-        font-size: 1.8rem;
-        width: 85%;
-        margin: 0 auto;
-    }
+  .grant-rates-by-office-graph-container p {
+    font-size: 2.5rem;
+  }
 
-    .graphs-section {
-        display: block;
-        width: 100%;
-    }
+  .gr-office-img {
+    height: 232px;
+    width: 450px;
+  }
 
-    .grant-rates-by-office-graph-container {
-        margin-top: 20%;
-        margin-bottom: 40%;
-    }
+  .grant-rates-by-nationality-container {
+    margin-bottom: 25%;
+  }
 
-    .grant-rates-by-office-graph-container p {
-        font-size: 2.5rem;
-    }
+  .grant-rates-by-nationality-container p {
+    font-size: 2.5rem;
+  }
 
-    .gr-office-img {
-        height: 232px;
-        width: 450px;
-    }
+  .gr-nationality-img {
+    margin-bottom: 8%;
+    height: 335px;
+    width: 383px;
+  }
 
-    .grant-rates-by-nationality-container {
-        margin-bottom: 25%;
-    }
+  .grant-rates-over-time-container {
+    margin-bottom: 40%;
+  }
 
-    .grant-rates-by-nationality-container p {
-        font-size: 2.5rem;
-    }
+  .gr-overtime-img {
+    height: 232px;
+    width: 450px;
+  }
+  .grant-rates-over-time-container p {
+    font-size: 2.5rem;
+  }
 
-    .gr-nationality-img {
-        margin-bottom: 8%;
-        height: 335px;
-        width: 383px;
-    }
+  .ant-btn {
+    line-height: 2;
+    width: 172px;
+  }
 
-    .grant-rates-over-time-container {
-        margin-bottom: 40%;
-    }
+  .middle-section {
+    display: block;
+    width: 100%;
+    height: 75vh;
+    background-color: @secondary-color;
+    padding-top: 10%;
+    text-align: center;
+  }
 
-    .gr-overtime-img {
-        height: 232px;
-        width: 450px;
-    }
+  .hrf-img {
+    height: 418px;
+    width: 800px;
+  }
 
-    .grant-rates-over-time-container p {
-        font-size: 2.5rem;
-    }
+  .middle-section-text-container {
+    width: 85%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 10%;
+  }
 
-    .ant-btn {
-        line-height: 2;
-        width: 172px;
-    }
+  .middle-section-text-container h3 {
+    font-size: 1.9rem;
+    color: @white;
+  }
 
-    .middle-section {
-        display: block;
-        width: 100%;
-        height: 75vh;
-        background-color: @secondary-color;
-        padding-top: 10%;
-        text-align: center;
-    }
+  .bottom-section h1 {
+    font-size: 3.5rem;
+  }
 
-    .hrf-img {
-        height: 418px;
-        width: 800px;
-    }
+  .data-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
 
-    .middle-section-text-container {
-        width: 85%;
-        text-align: center;
-        margin: 0 auto;
-        padding-top: 10%;
-    }
+  .first-data-point-container {
+    width: 85%;
+    margin-bottom: 5%;
+  }
+  .first-data-point-container h2 {
+    font-size: 3.5rem;
+  }
+  .first-data-point-container h3 {
+    font-size: 1.5rem;
+  }
 
-    .middle-section-text-container h3 {
-        font-size: 1.9rem;
-        color: @white;
-    }
+  .second-data-point-container {
+    width: 85%;
+    margin-bottom: 5%;
+  }
+  .second-data-point-container h2 {
+    font-size: 3.5rem;
+  }
+  .second-data-point-container h3 {
+    font-size: 1.5rem;
+  }
 
-    .bottom-section h1 {
-        font-size: 3.5rem;
-    }
+  .third-data-point-container {
+    width: 85%;
+    margin-bottom: 5%;
+  }
+  .third-data-point-container h2 {
+    font-size: 3.5rem;
+  }
+  .third-data-point-container h3 {
+    font-size: 1.5rem;
+  }
 
-    .data-container {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-    }
+  .back-to-top {
+    width: 35%;
+  }
 
-    .first-data-point-container {
-        width: 85%;
-        margin-bottom: 5%;
-    }
-
-    .first-data-point-container h2 {
-        font-size: 3.5rem;
-    }
-
-    .first-data-point-container h3 {
-        font-size: 1.5rem;
-    }
-
-    .second-data-point-container {
-        width: 85%;
-        margin-bottom: 5%;
-    }
-
-    .second-data-point-container h2 {
-        font-size: 3.5rem;
-    }
-
-    .second-data-point-container h3 {
-        font-size: 1.5rem;
-    }
-
-    .third-data-point-container {
-        width: 85%;
-        margin-bottom: 5%;
-    }
-
-    .third-data-point-container h2 {
-        font-size: 3.5rem;
-    }
-
-    .third-data-point-container h3 {
-        font-size: 1.5rem;
-    }
-
-    .back-to-top {
-        width: 35%;
-    }
-
-    .ant-space-align-center {
-        width: 70%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-
-    }
+  .ant-space-align-center {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 @media @laptop {
-    .header {
-        height: 35vh;
-    }
+  .header {
+    height: 35vh;
+  }
 
-    .header-text-container h1 {
-        font-size: 2.8rem;
-        padding-top: 5%;
-    }
+  .header-text-container h1 {
+    font-size: 2.8rem;
+    padding-top: 5%;
+  }
 
-    .header-text-container h3 {
-        font-size: 1.4rem;
-        width: 75%;
-        margin: 0 auto;
-    }
+  .header-text-container h3 {
+    font-size: 1.4rem;
+    width: 75%;
+    margin: 0 auto;
+  }
 
-    .middle-section {
-        display: flex;
-        width: 100%;
-        justify-content: space-evenly;
-        padding: 0 2%;
-    }
+  .middle-section {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 0 2%;
+  }
 
-    .hrf-img {
-        height: 318px;
-        width: 608px;
-    }
+  .hrf-img {
+    height: 318px;
+    width: 608px;
+  }
 
-    .middle-section-text-container {
-        width: 85%;
-        text-align: center;
-        margin: 0 auto;
-        padding: 0 2%;
-    }
+  .middle-section-text-container {
+    width: 85%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 2%;
+  }
+
+  .first-data-point-container {
+    width: 23%;
+  }
+
+  .second-data-point-container {
+    width: 23%;
+  }
+
+  .third-data-point-container {
+    width: 23%;
+  }
+
+  .back-to-top {
+    width: 35%;
+  }
+}
+.content_layout{
+  height: 72vh;
+}
+
+.content_title {
+  font-size: 2.5rem;
+  font-family: 'AcuminProMediumItalic';
+  text-decoration: underline;
+  text-underline-offset: 3px; 
+  color: #333;
+}
 
 
-    .first-data-point-container {
-        width: 23%;
-    }
+.content__body {
+  padding: 2rem 10rem; 
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; 
+}
 
-    .second-data-point-container {
-        width: 23%;
-    }
 
-    .third-data-point-container {
-        width: 23%;
-    }
+.profile_avatar {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  border: 4px solid #fff; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
 
-    .back-to-top {
-        width: 35%;
-    }
+.profile_title {
+  font-size: 1.8rem;
+  font-family: 'AcuminProMediumItalic';
+  color: #333;
+  margin-bottom: 0.5rem; /* Add some space below each profile detail */
+}
+
+.profile-grid {
+  background-color: #f9f9f9; 
+  padding: 2rem; 
+  border-radius: 10px; 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.warning{
+  padding-top: 20rem;
+  font-size:1.3rem ;
+}
+
+.page-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  border: 4px solid #f3f3f3; 
+  border-top: 4px solid #3498db; 
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite; 
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.button_login{
+  height: 3.5rem;
+  width: 6rem;
+  border-radius: 15%;
+}
+.button_sign-up{
+  height: 3.5rem;
+  width: 6rem;
+  border-radius: 15%;
+}
+.button_logout{
+  height: 3.5rem;
+  width: 6rem;
+  border-radius: 15%;
 }

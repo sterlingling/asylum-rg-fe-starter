@@ -198,7 +198,7 @@ function GraphWrapper(props) {
 
           console.log(newDataSet);
 
-          // callback called with new data set
+          // here i Call the state setting callback with the new data set
           stateSettingCallback(view, office, newDataSet);
         })
         .catch(err => {
